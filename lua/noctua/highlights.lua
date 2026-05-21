@@ -548,4 +548,4 @@ function M.apply(p, variant)
   vim.g.terminal_color_15 = p.t_white
 end
 
-return 
+return M
