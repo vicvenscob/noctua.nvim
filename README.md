@@ -37,16 +37,15 @@ bg  #1c1510   fg  #ead8be   blue  #7aadee   mauve  #dd99cc
 
 ### garrys.nvim
 ```lua
-{
-  "vicvenscob/noctua.nvim",
-  name   = "nocuta",
-  lazy   = false,
-  opts   = { time = "lunch" },
-  config = function(opts)
-    require("nocuta").setup(opts)
-    vim.cmd("colorscheme nocuta")
-  end,
-},
+return {
+  {
+    "vicvenscob/noctua.nvim",
+    lazy   = false,
+    config = function()
+      vim.cmd("colorscheme noctua")
+    end,
+  },
+}
 ```
 
 ### lazy.nvim
